@@ -1,25 +1,22 @@
-groupList = []
 
-numberOfStudents = 21
+
+
 randGroups = []
 
 numberOfGroups = 5
 
-def getStudents():
-	newMembers = []
-	with open("members.txt", "r","utf-8") as myFile:
-		lines = myFile.readlines()
-		for name in lines:
-			newName = name.rstrip("/n")
-			newMembers.append(newName)
-		
-	return newMembers
-	
-	
 
-##create student list
-for i in range(1,numberOfStudents + 1):
-    groupList.append(i)
+groupList = []
+with open("members.txt",mode="r",encoding="utf-8") as myFile:
+        for line in myFile:
+                newName = line.rstrip("\n")
+                groupList.append(newName)
+        
+print(groupList)
+numberOfStudents = len(groupList)
+####create student list
+##for i in range(1,numberOfStudents + 1):
+##    groupList.append(i)
 
 ##create group list
 for i in range(1,numberOfGroups + 1):
