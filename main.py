@@ -26,7 +26,7 @@ class ClassGroups:
 
 
     def loadMembers(self):
-        #test
+        #test2
 
        
         with open(self.file, mode="r",encoding="utf-8") as myFile:
