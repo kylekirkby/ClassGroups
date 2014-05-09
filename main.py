@@ -9,7 +9,7 @@ class ClassGroups:
     def __init__(self):
 
         self.file = "members.txt"
-        self.numberOfGroups = 5
+        self.numberOfGroups = 6
         self.groupList = []
         self.randGroups = []
 
